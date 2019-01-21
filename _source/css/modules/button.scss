@@ -1,0 +1,20 @@
+.btn {
+  border-radius: 25px;
+  background-color: $main_red;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.55s ease;
+  &:hover {
+    background-color: darken($main_red, 10%);
+  }
+  &:active {
+    background-color: darken($main_red, 20%);
+  }
+  &:focus {
+    background-color: darken($main_red, 10%);
+  }
+}
