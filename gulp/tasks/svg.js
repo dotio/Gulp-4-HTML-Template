@@ -1,7 +1,7 @@
 module.exports = function() {
   $.gulp.task("sprite:svg", () => {
     return $.gulp
-      .src("./_source/svg/**/*.svg")
+      .src("./source/svg/**/*.svg")
       .pipe(
         $.gp.svgmin({
           js2svg: {
@@ -34,7 +34,7 @@ module.exports = function() {
 
   $.gulp.task("sprite:svg-build", () => {
     return $.gulp
-      .src("./_source/svg/**/*.svg")
+      .src("./source/svg/**/*.svg")
       .pipe(
         $.gp.svgmin({
           js2svg: {
@@ -62,6 +62,6 @@ module.exports = function() {
           }
         })
       )
-      .pipe($.gulp.dest("./_assets/svg/"));
+      .pipe($.gulp.dest("./build/svg/"));
   });
 };

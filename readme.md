@@ -7,18 +7,18 @@
 4. PNG module
 
 #### Structure
-_source
-    css
-    favicon
-    font
-    img
-    js
-    module
-    svg
-    template
+source
+    > css
+    > favicon
+    > font
+    > img
+    > js
+    > module
+    > svg
+    > template
 gulp
-    config
-    tasks
+    > config
+    > tasks
 
 #### Run 
 npm i

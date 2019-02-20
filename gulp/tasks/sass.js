@@ -2,7 +2,7 @@
 module.exports = function() {
   $.gulp.task("style:copy", function() {
     return $.gulp
-      .src("./_source/css/style.scss")
+      .src("./source/css/style.scss")
       .pipe($.gp.plumber())
       .pipe($.gp.sourcemaps.init())
       .pipe($.sassGlob())
@@ -31,7 +31,7 @@ module.exports = function() {
 
   $.gulp.task("style:build", function() {
     return $.gulp
-      .src("./_source/css/style.scss")
+      .src("./source/css/style.scss")
       .pipe($.gp.plumber())
       .pipe($.gp.sourcemaps.init())
       .pipe($.sassGlob())
@@ -51,6 +51,6 @@ module.exports = function() {
       .pipe($.cleanCSS())
       .pipe($.gp.cssnano())
       .pipe($.gp.sourcemaps.write())
-      .pipe($.gulp.dest("./_assets/css/"));
+      .pipe($.gulp.dest("./build/css/"));
   });
 };

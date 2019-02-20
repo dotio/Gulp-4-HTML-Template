@@ -51,7 +51,6 @@ $.gulp.task(
       "sprite:svg-build",
       "img:build",
       "font:build",
-      "sprite:png-build",
       "module:build",
       "favicon:build"
     )

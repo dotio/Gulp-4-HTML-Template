@@ -3,7 +3,7 @@ module.exports = function() {
   $.gulp.task("pug:copy", function() {
     return (
       $.gulp
-        .src("./_source/template/pages/*.pug")
+        .src("./source/template/pages/*.pug")
         //.pipe($.gp.plumber())
         .pipe($.gp.pug({ pretty: true }))
         .on(
@@ -23,7 +23,7 @@ module.exports = function() {
   $.gulp.task("pug:build", function() {
     return (
       $.gulp
-        .src("./_source/template/pages/*.pug")
+        .src("./source/template/pages/*.pug")
         //.pipe($.gp.plumber())
         .pipe($.gp.pug({ pretty: true }))
         .on(
@@ -35,7 +35,7 @@ module.exports = function() {
             };
           })
         )
-        .pipe($.gulp.dest("./_assets/"))
+        .pipe($.gulp.dest("./build/"))
         .on("end", $.browserSync.reload)
     );
   });
