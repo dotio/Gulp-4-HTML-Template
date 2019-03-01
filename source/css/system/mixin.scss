@@ -144,7 +144,7 @@
 //*********************************************
 //		container
 //*********************************************
-$offset: 0px;
+$offset: 30px;
 $offset_one_side: ($offset / 2);
 @mixin col-offsets($type) {
   #{$type}-left: $offset_one_side;
@@ -164,34 +164,30 @@ $atom: (100% / $columns);
 //*********************************************
 //		Media
 //*********************************************
-@mixin xs() {
-  @media screen and (max-width: 360px) {
+@mixin phones() {
+  @media screen and (max-width: 500px) {
     @content;
   }
 }
 
-@mixin phones() {
-  @media screen and (min-width: 321px) and (max-width: 480px) {
+@mixin landscape() {
+  @media screen and (max-height: 500px) {
     @content;
   }
 }
-@mixin phonesLand() {
-  @media screen and (min-width: 481px) and (max-width: 767px) {
-    @content;
-  }
-}
+
 @mixin tablets() {
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
+  @media screen and (min-width: 501px) and (max-width: 768px) {
     @content;
   }
 }
-@mixin laptop() {
-  @media screen and (min-width: 1025px) and (max-width: 1280px) {
+@mixin normal() {
+  @media screen and (min-width: 769px) and (max-width: 1200px) {
     @content;
   }
 }
-@mixin desktop() {
-  @media screen and (min-width: 1281px) and (max-width: 1600px){
+@mixin widescreen() {
+  @media screen and (min-width: 1201px) {
     @content;
   }
 }

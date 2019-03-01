@@ -1,12 +1,12 @@
-@import "block/system/_var";
-@import "block/system/_font";
-@import "block/system/_base";
-@import "block/system/mixin";
+@import "system/_var";
+@import "system/_font";
+@import "system/_base";
+@import "system/mixin";
 
-@import "header/header";
-@import "main/main";
-@import "footer/footer";
+@import "parts/header";
+@import "parts/nav";
+@import "parts/footer";
 
 
 @import "modules/button";
-
+@import "modules/menu";
